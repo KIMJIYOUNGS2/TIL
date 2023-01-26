@@ -25,14 +25,14 @@ poetry 버전 확인해보기
 ```
 poetry --version
 ```
-
+---
 # poetry project setting
 ```
 poetry new 프로젝트명
 cd 프로젝트명
 ```
-
-# Install Django on Ubuntu
+---
+# install Django on Ubuntu
 ```
 sudo apt-get update
 sudo apt-get install python3
@@ -46,6 +46,7 @@ ls
 nano pyproject.toml
 poetry add requests
 ```
+
 ```
 sudo apt install python3-django
 django-admin --version
@@ -53,9 +54,12 @@ poetry shell
 poetry add Django
 django-admin startproject config . 
 ls -al
-python [manage.py](http://manage.py/) runserver
+python manage.py runserver
 ```
 
+***여기까지만 하고 서버에 들어가려고하면 당연히 오류가 발생! 포트 변경이 필요***
+
+---
 # 포트 변경하기
 1. cmd창에서 pem 파일 있는 경로로 이동
 2. ssh -i 키 입력하기
@@ -77,3 +81,4 @@ python manage.py migrate
 python manage.py runserver 0:8000
 ```
 12. 주소창에 내아이피:8000 입력하기
+---
