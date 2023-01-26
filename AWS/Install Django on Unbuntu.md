@@ -69,10 +69,11 @@ python [manage.py](http://manage.py/) runserver
 9. 상위 폴더로 가기 ```cd ..```
 10. aws 가서 보안그룹 설정
 11. 인바운드 규칙 편집
-규칙추가 > 사용자 지정 TCP > 포트범위 8000 > 소스 0.0.0.0./0 
-
-
-1. python [manage.py](http://manage.py) migrate
-2. python [manage.py](http://manage.py) runserver 0:8000
-3. 주소창에 내아이피:8000 입력하기
-[http://3.35.47.255:8000/](http://3.35.47.255:8000/)
+규칙추가 > 사용자 지정 TCP > 포트범위: 8000  소스: 0.0.0.0./0 
+```
+python manage.py migrate
+```
+```
+python manage.py runserver 0:8000
+```
+12. 주소창에 내아이피:8000 입력하기
